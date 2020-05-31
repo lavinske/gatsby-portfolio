@@ -1,24 +1,37 @@
+/** @jsx jsx */
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import cdr from 'assets/illustrations/coder_think.svg';
+import { Wrapper, IntroWrapper, Details, Thumbnail, IntroDesc } from './styles';
+import { jsx, useColorMode, Styled } from 'theme-ui';
+import overlayIllustration from 'assets/illustrations/overlay.svg';
 
-export const Intro = () => (
-  <Wrapper>
+export const Intro = () => { 
+
+const [colorMode] = useColorMode()
+
+return(
+  <Wrapper sx={{
+  backgroundImage: colorMode === 'dark' ? 'none' : 'url('+overlayIllustration+')'
+  }}>
     <Header />
     <IntroWrapper as={Container}>
       <Details>
-        <h1>Hi There!</h1>
-        <h4>I’m Steven Lavinske!</h4>
-        <Button as={AnchorLink} href="mailto:saya@sangat.pro">
-          Contact Me!
-        </Button>
+        <Styled.h1>Hi There!</Styled.h1>
+        <p sx={{
+          color:'text1',
+          fontSize: 30,
+          mb: 50
+        }}>I’m Steven Lavinske!</p>
+        <Styled.a href="https://linkedin.com/in/lavinske" target="_blank">
+          View my LinkedIn!
+        </Styled.a>
       </Details>
       <Thumbnail>
-        <img src={dev} alt="I’m Steven Lavinske!" />
+        <img src={cdr} alt="I’m Steven Lavinske!" />
       </Thumbnail>
     </IntroWrapper>
   </Wrapper>
-);
+)
+}

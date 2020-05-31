@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   ${({ sidebar }) =>
     sidebar &&
     `
-			right: 18%;
+			right: 15%;
 			top: 1.4rem;
 		
 			@media (max-width: 960px) {
@@ -42,6 +42,10 @@ export const Bar = styled.div`
 	@media (max-width: 600px){
 		width: 1.6rem;
 	}
+
+	${(sidebar) => `
+
+	`}
 
 	${({ top, sidebar }) =>
     top &&

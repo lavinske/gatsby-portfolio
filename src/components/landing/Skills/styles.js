@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
-  background-image: url(${detailsIllustration});
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -19,6 +17,10 @@ export const SkillsWrapper = styled.div`
   }
 `;
 
+export const SkillsParagraph = styled.p`
+  font-size: 1.2em!important;
+`;
+
 export const Details = styled.div`
   flex: 1;
   padding-left: 2rem;
@@ -31,16 +33,8 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: #212121;
   }
 
-  p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
-    font-weight: normal;
-    line-height: 1.3;
-    color: #707070;
-  }
 `;
 
 export const Thumbnail = styled.div`

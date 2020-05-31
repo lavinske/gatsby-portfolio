@@ -1,24 +1,30 @@
 [
   {
     "id": 0,
+    "name": "LinkedIn",
+    "link": "https://linkedin.com/in/lavinske",
+    "icon": "/icons/linkedin.png"
+  },
+  {
+    "id": 1,
     "name": "Telegram",
     "link": "https://t.me/lavinske",
     "icon": "/icons/telegram.svg"
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Github",
     "link": "https://github.com/lavinske",
     "icon": "/icons/github.svg"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/lavinske",
+    "link": "https://stackoverflow.com/users/story/10595287",
     "icon": "/icons/stackoverflow.svg"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Twitter",
     "link": "https://twitter.com/StevenLavinske",
     "icon": "/icons/twitter.svg"

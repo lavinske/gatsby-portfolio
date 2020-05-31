@@ -1,12 +1,21 @@
+/** @jsx jsx */
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Wrapper } from './styles';
+import { useColorMode, Styled, jsx } from 'theme-ui';
 
-const NavbarLinks = ({ desktop }) => (
+const NavbarLinks = ({desktop, props}) => {
+const [colorMode] = useColorMode()
+
+return(
   <Wrapper desktop={desktop}>
-    <AnchorLink href="#about">About</AnchorLink>
-    <AnchorLink href="#projects">Projects</AnchorLink>
+    <a sx={{
+    	color:'text'
+    }} href="#about">About</a>
+    <a sx={{
+    	color:'text'
+    }}href="#projects">Projects</a>
   </Wrapper>
 );
+}
 
 export default NavbarLinks;

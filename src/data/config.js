@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'Steven Lavinske Santosa',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: './static/icons/icon.png',
   author: 'Steven Lavinske x Smakosh',
-  url: 'https://sangat.pro',
+  url: 'https://lav.my.id',
   legalName: 'Steven Lavinske Santosa',
   defaultDescription: 'I’m Steven Lavinske, an university student from Bandung!',
   socialLinks: {

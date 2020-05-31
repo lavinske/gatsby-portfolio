@@ -5,6 +5,7 @@ export const Global = createGlobalStyle`
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 
     article,
     aside,
@@ -40,6 +41,7 @@ export const Global = createGlobalStyle`
     a {
       background-color: transparent;
       -webkit-text-decoration-skip: objects;
+      cursor:pointer;
     }
     a:active,
     a:hover {
