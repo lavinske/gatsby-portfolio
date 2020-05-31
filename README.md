@@ -30,11 +30,10 @@
 - [Theme UI](https://theme-ui.org) Integrated
 - Easy color customization
 - Theme installation support
-- 
 
 ## Design
 
-Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers)
+Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers) [Original by Smakosh]
 
 ## Structure
 
